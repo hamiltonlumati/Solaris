@@ -1,0 +1,51 @@
+internal/modules/cjs/loader.js:285
+    throw e;
+    ^
+
+SyntaxError: Error parsing /home/utocgawh/solaris.utocria.com/package.json: Unexpected token + in JSON at position 64
+    at parse (<anonymous>)
+    at readPackage (internal/modules/cjs/loader.js:272:20)
+    at readPackageScope (internal/modules/cjs/loader.js:297:19)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1096:17)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:101:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1) {
+  path: '/home/utocgawh/solaris.utocria.com/package.json'
+}
+internal/modules/cjs/loader.js:285
+    throw e;
+    ^
+
+SyntaxError: Error parsing /home/utocgawh/solaris.utocria.com/package.json: Unexpected token + in JSON at position 64
+    at parse (<anonymous>)
+    at readPackage (internal/modules/cjs/loader.js:272:20)
+    at readPackageScope (internal/modules/cjs/loader.js:297:19)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1096:17)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:101:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1) {
+  path: '/home/utocgawh/solaris.utocria.com/package.json'
+}
+internal/modules/cjs/loader.js:285
+    throw e;
+    ^
+
+SyntaxError: Error parsing /home/utocgawh/solaris.utocria.com/package.json: Unexpected token + in JSON at position 64
+    at parse (<anonymous>)
+    at readPackage (internal/modules/cjs/loader.js:272:20)
+    at readPackageScope (internal/modules/cjs/loader.js:297:19)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1096:17)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:101:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1) {
+  path: '/home/utocgawh/solaris.utocria.com/package.json'
+}
