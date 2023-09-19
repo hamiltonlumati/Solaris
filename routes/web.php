@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ApresentacaoDosDadosController;
+use App\Http\Controllers\NotificacoesController;
+use App\Http\Controllers\RecepcaoDosDadosController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,8 +18,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/graficos', [ApresentacaoDosDadosController::class, 'apresentacao'])->name('graficos');
+
+Route::get('/notificacoes', [NotificacoesController::class, 'Notificacoes'])->name('notificacoes');
+
+Route::post('/post/{tempAmbiente}/{tempPainel}/{tensao0}/{tensao1}/{corrente}', 
+    [RecepcaoDosDadosController::class, 'post'])->name('recepcao');
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

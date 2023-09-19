@@ -13,7 +13,13 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                        Página Inicial
+                    </x-nav-link>
+                    <x-nav-link :href="route('graficos')" :active="request()->routeIs('graficos')">
+                        Gráficos
+                    </x-nav-link>
+                    <x-nav-link :href="route('notificacoes')" :active="request()->routeIs('notificacoes')">
+                        Notificações
                     </x-nav-link>
                 </div>
             </div>
@@ -35,7 +41,7 @@
 
                     <x-slot name="content">
                         <x-dropdown-link :href="route('profile.edit')">
-                            {{ __('Profile') }}
+                            {{ __('Perfil') }}
                         </x-dropdown-link>
 
                         <!-- Authentication -->

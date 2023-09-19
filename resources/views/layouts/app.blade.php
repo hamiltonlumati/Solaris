@@ -12,7 +12,11 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+            @vite(['resources/css/app.css', 'resources/js/app.js'])
+            <!-- Load plotly.js into the DOM -->
+            <script src='https://cdn.plot.ly/plotly-2.25.2.min.js'></script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+            <script src="{{asset('build\assets\plotly.js')}}"></script>
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
