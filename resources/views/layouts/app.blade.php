@@ -16,7 +16,7 @@
             <!-- Load plotly.js into the DOM -->
             <script src='https://cdn.plot.ly/plotly-2.25.2.min.js'></script>
             <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
-            <script src="{{asset('build\assets\plotly.js')}}"></script>
+            <script src="{{asset('/js/plotly.js')}}"></script>
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900">

@@ -21,9 +21,13 @@ Route::get('/', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/graficos', [ApresentacaoDosDadosController::class, 'apresentacao'])->name('graficos');
+Route::get('/graficos', [ApresentacaoDosDadosController::class, 'apresentacao'])
+    ->middleware(['auth', 'verified'])
+    ->name('graficos');
 
-Route::get('/notificacoes', [NotificacoesController::class, 'Notificacoes'])->name('notificacoes');
+Route::get('/notificacoes', [NotificacoesController::class, 'Notificacoes'])
+    ->middleware(['auth', 'verified'])
+    ->name('notificacoes');
 
 Route::post('/post/{tempAmbiente}/{tempPainel}/{tensao0}/{tensao1}/{corrente}', 
     [RecepcaoDosDadosController::class, 'post'])->name('recepcao');
