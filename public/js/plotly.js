@@ -56,6 +56,7 @@ var dadosLuminosidade = [luminosidade];
 
 var layoutTemperaturas = {
   title: 'Temperatura do Ambiente e do Painel',
+  autosize: true,
   xaxis: {
     range: ['2023-09-01', '2023-10-04'],
     type: 'date'
@@ -69,6 +70,7 @@ var layoutTemperaturas = {
 
 var layoutTensao = {
   title: 'Tensão de Saída',
+  autosize: true,
   xaxis: {
     range: ['2023-09-01', '2023-10-04'],
     type: 'date'
@@ -82,6 +84,7 @@ var layoutTensao = {
 
 var layoutCorrente = {
   title: 'Corrente de Saída',
+  autosize: true,
   xaxis: {
     range: ['2023-09-01', '2023-10-04'],
     type: 'date'
@@ -95,6 +98,7 @@ var layoutCorrente = {
 
 var layoutLuminosidade = {
   title: 'Intensidade Luminosa (%)',
+  autosize: true,
   xaxis: {
     range: ['2023-09-01', '2023-10-04'],
     type: 'date'
