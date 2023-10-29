@@ -46,4 +46,7 @@
             </x-primary-button>
         </div>
     </form>
+    <div>
+        <p>Bem-Vindo ao Solaris, uma web app concebida para apresentar em tempo real dados de um painel fotovoltaico utilizando a teconoliga de Internet das Coisas. O projecto foi desenvolvido pelo estudante Hamilton Lumati, no âmbito do seu trabalho de Fim de Curso no Instituto Superior Politécnico de Tecnologias e Ciêcias (ISPTEC). Para aceder à plataforma introduza as seguintes credenciais: Email: teste@teste.com, Password: Angola123. Essas credenciais estarão válidas até o dia 1 de Novembro de 2023.</p>
+    </div>
 </x-guest-layout>
