@@ -11,7 +11,7 @@
                 </div>
 
                 <!-- Navigation Links -->
-                <div class="space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         Página Inicial
                     </x-nav-link>
@@ -40,6 +40,16 @@
                     </x-slot>
 
                     <x-slot name="content">
+                        <x-dropdown-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                            Página Inicial
+                        </x-dropdown-link>
+                        <x-dropdown-link :href="route('graficos')" :active="request()->routeIs('graficos')">
+                            Gráficos
+                        </x-dropdown-link>
+                        <x-dropdown-link :href="route('notificacoes')" :active="request()->routeIs('notificacoes')">
+                            Notificações
+                        </x-dropdown-link>
+    
                         <x-dropdown-link :href="route('profile.edit')">
                             {{ __('Perfil') }}
                         </x-dropdown-link>
@@ -74,8 +84,15 @@
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                {{ __('Dashboard') }}
+                Página Inicial
             </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('graficos')" :active="request()->routeIs('graficos')">
+                Gráficos
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('notificacoes')" :active="request()->routeIs('notificacoes')">
+                Notificações
+            </x-responsive-nav-link>
+
         </div>
 
         <!-- Responsive Settings Options -->
