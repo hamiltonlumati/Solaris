@@ -19,8 +19,11 @@ export default {
 
     plugins: [forms],
 
-    purge: [
-        "./src/**/*.{js,ts,jsx,tsx}",
-        // Add more here
-    ],
+    purge: {
+        enable: true,
+         content: [
+             './storage/framework/views/*.php',
+             './resources/views/**/*.blade.php'
+         ]
+     }
 };
