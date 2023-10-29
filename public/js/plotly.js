@@ -69,7 +69,7 @@ var layoutTemperaturas = {
 };
 
 var layoutTensao = {
-  title: 'Tensão de Saída',
+  title: 'Tensão de Saída (V)',
   autosize: true,
   xaxis: {
     range: ['2023-09-01', '2023-10-04'],
@@ -83,7 +83,7 @@ var layoutTensao = {
 };
 
 var layoutCorrente = {
-  title: 'Corrente de Saída',
+  title: 'Corrente de Saída (A)',
   autosize: true,
   xaxis: {
     range: ['2023-09-01', '2023-10-04'],
