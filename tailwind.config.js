@@ -18,4 +18,9 @@ export default {
     },
 
     plugins: [forms],
+
+    purge: [
+        "./src/**/*.{js,ts,jsx,tsx}",
+        // Add more here
+    ],
 };
