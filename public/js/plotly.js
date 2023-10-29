@@ -55,7 +55,7 @@ var dadosCorrenteDeSaida = [correnteDeSaida];
 var dadosLuminosidade = [luminosidade];
 
 var layoutTemperaturas = {
-  title: 'Temperatura do Ambiente e do Painel',
+  title: 'Temperatura do Ambiente e do Painel (ºC)',
   autosize: true,
   xaxis: {
     range: ['2023-09-01', '2023-10-04'],
