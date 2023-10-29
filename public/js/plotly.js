@@ -31,8 +31,28 @@ var tensaoDeSaida = {
   line: {color: '#7F7F7F'}
 }
 
+var correnteDeSaida = {
+  type: "scatter",
+  mode: "lines",
+  name: 'Tensão de Saída',
+  x: unpack(rows, 'Date'),
+  y: unpack(rows, 'corrente'),
+  line: {color: '#7F7F7F'}
+}
+
+var luminosidade = {
+  type: "scatter",
+  mode: "lines",
+  name: 'Intensidade Luminosa (%)',
+  x: unpack(rows, 'Date'),
+  y: unpack(rows, 'luz'),
+  line: {color: '#7F7F7F'}
+}
+
 var temperaturas = [temperaturaAmbiente,temperaturaPainel];
 var dadosTensaoDeSaida = [tensaoDeSaida];
+var dadosCorrenteDeSaida = [correnteDeSaida];
+var dadosLuminosidade = [luminosidade];
 
 var layoutTemperaturas = {
   title: 'Temperatura do Ambiente e do Painel',
@@ -60,6 +80,35 @@ var layoutTensao = {
   }
 };
 
+var layoutCorrente = {
+  title: 'Corrente de Saída',
+  xaxis: {
+    range: ['2023-09-01', '2023-10-04'],
+    type: 'date'
+  },
+  yaxis: {
+    autorange: true,
+    range: [22, 30],
+    type: 'linear'
+  }
+};
+
+var layoutLuminosidade = {
+  title: 'Intensidade Luminosa (%)',
+  xaxis: {
+    range: ['2023-09-01', '2023-10-04'],
+    type: 'date'
+  },
+  yaxis: {
+    autorange: true,
+    range: [22, 30],
+    type: 'linear'
+  }
+};
+
 Plotly.newPlot('temperaturaAmbienteGraph', temperaturas, layoutTemperaturas);
 Plotly.newPlot('tensaoDeSaida', dadosTensaoDeSaida, layoutTensao);
+Plotly.newPlot('correnteDeSaida', dadosCorrenteDeSaida, layoutCorrente);
+Plotly.newPlot('intensidadeLuminosa', dadosLuminosidade, layoutLuminosidade);
+
 })

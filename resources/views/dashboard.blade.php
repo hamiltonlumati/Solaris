@@ -48,6 +48,13 @@
                           </div>
                         </div>
 
+                        <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-4">
+                          <div class="bg-white p-6 rounded-lg border-2">
+                            <h2 class="text-xl font-bold mb-4">Intensidade Luminosa</h2>
+                            <p class="text-4xl">91%</p>
+                          </div>
+                        </div>
+
                       </div>
                 </div>
             </div>
