@@ -88,7 +88,7 @@ var layoutCorrente = {
   },
   yaxis: {
     autorange: true,
-    range: [22, 30],
+    range: [0, 2],
     type: 'linear'
   }
 };
@@ -101,7 +101,7 @@ var layoutLuminosidade = {
   },
   yaxis: {
     autorange: true,
-    range: [22, 30],
+    range: [50, 100],
     type: 'linear'
   }
 };
