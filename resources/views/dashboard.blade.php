@@ -31,7 +31,7 @@
                         <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-4">
                           <div class="bg-white p-6 rounded-lg border-2">
                             <h2 class="text-xl font-bold mb-4">Corrente de Saída</h2>
-                            <p class="text-4xl">0.52 A</p>
+                            <p class="text-4xl">0.30 A</p>
                           </div>
                         </div>
                     
@@ -44,7 +44,7 @@
                         <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-4">
                           <div class="bg-white p-6 rounded-lg border-2">
                             <h2 class="text-xl font-bold mb-4">Potência de Saída</h2>
-                            <p class="text-4xl">1.716 W</p>
+                            <p class="text-4xl">0,99 W</p>
                           </div>
                         </div>
 
