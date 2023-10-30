@@ -22,6 +22,9 @@
         </div>
         
     </div>
+    <div class="p-auto text-center">
+        Por Hamilton Lumati. 2023 &copy; Todos os direitos reservados.
+    </div>
 
 
 </x-app-layout>
