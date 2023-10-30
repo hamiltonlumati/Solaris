@@ -49,10 +49,30 @@ var luminosidade = {
   line: {color: '#7F7F7F'}
 }
 
+var potenciaDeSaída = {
+  type: "scatter",
+  mode: "lines",
+  name: 'Potência de Saída',
+  x: unpack(rows, 'Date'),
+  y: unpack(rows, 'potencia'),
+  line: {color: '#7F7F7F'}
+}
+
+var eficiencia = {
+  type: "scatter",
+  mode: "lines",
+  name: 'Eficiência',
+  x: unpack(rows, 'Date'),
+  y: unpack(rows, 'eficiencia'),
+  line: {color: '#7F7F7F'}
+}
+
 var temperaturas = [temperaturaAmbiente,temperaturaPainel];
 var dadosTensaoDeSaida = [tensaoDeSaida];
 var dadosCorrenteDeSaida = [correnteDeSaida];
 var dadosLuminosidade = [luminosidade];
+var dadosPotenciaDeSaida = [potenciaDeSaída];
+var dadosEficiencia = [eficiencia];
 
 var layoutTemperaturas = {
   title: 'Temperatura do Ambiente e do Painel (ºC)',
@@ -96,8 +116,36 @@ var layoutCorrente = {
   }
 };
 
+var layoutPotenciadeSaida = {
+  title: 'Potência de Saída (W)',
+  autosize: true,
+  xaxis: {
+    range: ['2023-09-01', '2023-10-04'],
+    type: 'date'
+  },
+  yaxis: {
+    autorange: true,
+    range: [0, 2],
+    type: 'linear'
+  }
+};
+
 var layoutLuminosidade = {
   title: 'Intensidade Luminosa (%)',
+  autosize: true,
+  xaxis: {
+    range: ['2023-09-01', '2023-10-04'],
+    type: 'date'
+  },
+  yaxis: {
+    autorange: true,
+    range: [50, 100],
+    type: 'linear'
+  }
+};
+
+var layoutEficiencia = {
+  title: 'Eficiência (%)',
   autosize: true,
   xaxis: {
     range: ['2023-09-01', '2023-10-04'],
@@ -114,5 +162,8 @@ Plotly.newPlot('temperaturaAmbienteGraph', temperaturas, layoutTemperaturas);
 Plotly.newPlot('tensaoDeSaida', dadosTensaoDeSaida, layoutTensao);
 Plotly.newPlot('correnteDeSaida', dadosCorrenteDeSaida, layoutCorrente);
 Plotly.newPlot('intensidadeLuminosa', dadosLuminosidade, layoutLuminosidade);
+Plotly.newPlot('potenciaDeSaida', dadosPotenciaDeSaida, layoutPotenciadeSaida);
+Plotly.newPlot('eficiencia', dadosEficiencia, layoutEficiencia);
+
 
 })

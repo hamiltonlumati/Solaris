@@ -31,20 +31,26 @@
                         <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-4">
                           <div class="bg-white p-6 rounded-lg border-2">
                             <h2 class="text-xl font-bold mb-4">Corrente de Saída</h2>
-                            <p class="text-4xl">0.30 A</p>
+                            <p class="text-4xl">0.041 A</p>
                           </div>
                         </div>
                     
                         <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-4">
                           <div class="bg-white p-6 rounded-lg border-2">
                             <h2 class="text-xl font-bold mb-4">Tensão de Saída</h2>
-                            <p class="text-4xl">3.3 V</p>
+                            <p class="text-4xl">3.2 V</p>
                           </div>
                         </div>
                         <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-4">
                           <div class="bg-white p-6 rounded-lg border-2">
                             <h2 class="text-xl font-bold mb-4">Potência de Saída</h2>
-                            <p class="text-4xl">0,99 W</p>
+                            <p class="text-4xl">0,13 W</p>
+                          </div>
+                        </div>
+                        <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-4">
+                          <div class="bg-white p-6 rounded-lg border-2">
+                            <h2 class="text-xl font-bold mb-4">Eficiência</h2>
+                            <p class="text-4xl">13,17 %</p>
                           </div>
                         </div>
 
